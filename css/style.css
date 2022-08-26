@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400;500&family=Edu+VIC+WA+NT+Beginner:wght@700&family=Estonia&family=Gentium+Plus:ital,wght@1,700&family=Lobster&family=Oswald&display=swap');
+/* @font-face {
+    font-family: mm;
+    font-weight: normal;
+    src: url("../fonts/Pyidaungsu-1.8.3_Regular.ttf");
+} */
+/* pydaungsu font ကချိတ်လိုက်ရင် eng font ပါတစ်ခါတည်းပြောင်းသွားလို့ sagar font ကိုသုံတာ
+sagar font ကို သုံးရင် မြန်မာစာ ဘဲပြောင်းတယ် eng font က မပြောင်းဘူး  */
+:root{
+    --primary:#2cd1ee;
+    --primary-soft:#8ae9fa;
+    --secondary:#707070;
+    --secondary-soft:#e7e7e7;
+    --light:#ffffff;
+    --dark:#000000;
+    --br:5px;
+}
+@font-face {
+    font-family: mm;
+    src: url(../fonts/Pyidaungsu-1.8.3_Bold.ttf);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', mm;
+}
+body{
+    transition:0.5s;
+}
+.container{
+    width: 700px;
+    margin: 100px auto;
+}
+.first-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+}
+.logo-name{
+    font-size: 40px;
+    margin-left: 10px;
+    color: var(--dark);
+}
+.result-container{
+
+}
+.result{
+    font-size: 40px;
+}
+.line-container{
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 10px 0;
+}
+.second-container{
+
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+.box{
+    width: 160px;
+}
+label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--secondary);
+}
+.input-box,.from-box,.to-box{
+    width: 100%;
+    padding:10px;
+    outline: none;
+    border-radius: var(--br);
+    border: 1px solid var(--secondary);
+    text-align: right;
+}
+.input-box{
+
+}
+
+.input,.calculate{
+    outline: none;
+}
+.calculate{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: var(--br);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--light);
+}
+.calculate:active{
+    background-color: var(--primary-soft);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  .third-container{
+    margin-top:10px;
+  }
+  table{
+    width: 100%;
+    /* border-collapse: collapse; */
+  }
+  table tr td{
+    /* border: 1px solid var(--secondary); */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  table thead td{
+    background-color: var(--primary);
+    color: #fff;
+  }
+  tr:hover{
+    background-color: var(--primary-soft) !important;
+ }
+ table tbody tr:nth-child(even){
+    background-color: var(--secondary-soft);
+ }
+
+ thead td:last-child,tbody td:last-child{
+    text-align: right;
+ }
+ #rowSpacer{
+    text-align: center;
+ }
+ #history,thead,.logo-name,.result{
+    user-select: none;
+ }
+ @media screen and (max-width:412px){
+    .container{
+        width: 95%;
+        margin-top: -40px;
+    }
+    .result{
+        margin-top: 100px;
+    }
+    .form-container{
+        display: block;
+    }
+    .container-input{
+        display: inline;
+    }
+    .container-from,.container-to{
+        margin: 10px 0px;
+        display: inline-block;
+        width:49.5%;
+    }
+    .container-calculate{
+        width:100%;
+    }
+    .calculate{
+        padding: 15px;
+    }
+    .result,.logo-name{
+        font-size: 30px;
+    }
+ }
+ @media screen and (max-width:280px){
+    .container-from,.container-to{
+        width: 49%;
+        flex-flow: row;
+    }
+ }

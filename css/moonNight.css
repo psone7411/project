@@ -1,0 +1,24 @@
+.moonNight{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom:50px;
+    right: 50px;
+}
+.changeMood{
+    background-color: rgb(0, 0, 0);
+}
+.changeMood tr{
+    background-color: rgb(207, 207, 207);
+}
+.changeMood label,.changeMood .logo-name,.changeMood .result{
+    color: rgb(231, 231, 231);
+}
+.changeMood .moonNight{
+    background-color: white;
+    color: black;
+}
