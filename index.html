@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Calculator</title>
+    <link rel="icon" href="./img/logo..svg" type="image/icon type">
+    <!-- Primary Meta Tags -->
+<title>Exchange Calculator</title>
+<meta name="title" content="Exchange Calculator">
+<meta name="description" content="Exchange Calculator">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mms-it.com/">
+<meta property="og:title" content="Exchange Calculator">
+<meta property="og:description" content="Exchange Calculator">
+<meta property="og:image" content="img/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://mms-it.com/">
+<meta property="twitter:title" content="Exchange Calculator">
+<meta property="twitter:description" content="Exchange Calculator">
+<meta property="twitter:image" content="img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/animate_it/animate.min.css">
+    <link rel="stylesheet" href="./css/moonNight.css">
+</head>
+<body>
+    <div class="container animate__animated animate__backInDown">
+
+        <div class="first-container">
+            <div class="logo-container">
+                <img src="./img/logo..svg" alt="" class="logo">
+                <p class="logo-name">MMEx</p>
+            </div>
+            <div class="result-container">
+                <p class="result" id="result">00.0</p>
+            </div>
+        </div>
+        <div class="line-container"></div>
+
+        <div class="second-container">
+            <form action="" class="form-container" >
+               <div class="box container-input">
+                <label for="" class="input">input</label>
+                <input type="number" name="" required id="inputBox" class="input-box"  min="1"  placeholder="00.0" autofocus />
+               </div>
+
+               <div class="box container-from">
+                <label for="" class="from">from</label>
+                <select name="" required class="from-box" id="fromBox" >
+                    <option value="">select currency</option>
+                </select>
+                </div>
+
+               <div class="box container-to">
+                <label for="" class="to">to</label>
+                <select name="" id="toBox" class="to-box" required></select>
+               </div>
+
+               <div class="box container-calculate" >
+                <button class="calculate" id="calc">calculate</button>
+               </div>
+            </form>
+        </div>
+        <div class="third-container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>From</td>
+                        <td>To</td>
+                        <td>Result</td>
+                    </tr>
+                </thead>
+                <tbody id="history">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="moonNight animate__animated animate__backInUp">
+        <i class="fas fa-moon " id="moodIcon"></i>
+    </button>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
